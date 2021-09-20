@@ -129,4 +129,4 @@ def email_alert(subject, body, to, cc):
 
 
 email_alert(keplerSubject, bodyLog,
-            "phlacin@gmail.com", "aliserueckert@gmail.com")
+            "phlacin@gmail.com", "")
