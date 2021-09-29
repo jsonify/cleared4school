@@ -1,9 +1,8 @@
 pipeline {
   agent any
-  // environment {
-  //   NEW_VERSION = '1.3.0'
-  //   C4S_CREDENTIALS = credentials('c4s-credentials')
-  // }
+  environment {
+    NEW_VERSION = '1.3.0'
+  }
   
   stages {
     stage("build") {
