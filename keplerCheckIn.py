@@ -73,7 +73,7 @@ for i in range(16):
         i+1) + ']/div[1]/div[3]/label/span').click()
     time.sleep(1)
     times = str(i + 1)
-    print(f"Clicked 'No' button {times} times")
+    # print(f"Clicked 'No' button {times} times")
 
 log.append(f"Clicked 'No' button 16 times")
 
