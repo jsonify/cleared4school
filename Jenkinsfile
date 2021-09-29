@@ -10,9 +10,9 @@ pipeline {
         echo 'building the application...'
         echo "building version ${NEW_VERSION}"
         withCredentials([
-          usernamePassword(credentials: 'c4s-credentials', usernameVariable: USER, passwordVariable: PASSWORD)
+          usernamePassword(credentials: 'c4s-credentials', usernameVariable: USER, passwordVariable: PWD)
         ]) {
-          echo "some script: ${USER}:${PASSWORD}"
+          echo "some script: ${USER}:${PWD}"
         }
       }
     }
