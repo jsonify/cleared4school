@@ -13,7 +13,7 @@ pipeline {
           usernamePassword(credentialsId: 'c4s-credentials', usernameVariable: 'USER', passwordVariable: 'PWD')
         ]) {
           echo "some script: ${USER}: PWD"
-          sh "python testingHello.py"
+          sh "python testingHello.py ${USER} ${PWD}"
         }
       }
     }
