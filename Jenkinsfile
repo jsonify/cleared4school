@@ -12,7 +12,8 @@ pipeline {
         withCredentials([
           usernamePassword(credentialsId: 'c4s-credentials', usernameVariable: 'USER', passwordVariable: 'PWD')
         ]) {
-          echo "some script: ${USER}:${PWD}"
+          echo "some script: ${USER}: PWD"
+          sh "python testingHello.py"
         }
       }
     }
