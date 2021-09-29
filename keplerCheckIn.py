@@ -24,8 +24,8 @@ keplerSubject = ""
 # Setup Selenium and open browser
 
 options = webdriver.ChromeOptions()
-options.add_argument('--headless')
-options.add_argument('--disable-gpu')
+# options.add_argument('--headless')
+# options.add_argument('--disable-gpu')
 chromedriverPath = "/usr/local/bin/chromedriver"
 web = webdriver.Chrome(
     chromedriverPath, options=options)
@@ -53,6 +53,7 @@ submitButton.submit()
 print("Clicked Submit")
 log.append("Clicked Submit")
 time.sleep(5)
+
 dailyScreeningButtonX = web.find_element(
     By.XPATH, '//*[@id="collapseCardExample27594"]/div/a')
 print(dailyScreeningButtonX.text)
