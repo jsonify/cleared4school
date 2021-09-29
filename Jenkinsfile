@@ -12,7 +12,7 @@ pipeline {
         withCredentials([
           usernamePassword(credentials: 'c4s-credentials', usernameVariable: USER, passwordVariable: PWD)
         ]) {
-          echo "some script: ${USER}:${PWD}"
+          echo "some script: ${USER}"
         }
       }
     }
