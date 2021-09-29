@@ -11,7 +11,7 @@ pipeline {
       steps {
         echo 'building the application...'
         echo "building version ${NEW_VERSION}"
-        sh "python3 keplerCheckIn.py $C4S_CREDENTIALS_USR $C4S_CREDENTIALS_PSW"
+        sh "python3 keplerCheckIn.py $C4S_CREDENTIALS_USR $C4S_CREDENTIALS_PSW $RUECKERTSCRIPTS_CREDENTIALS_USR $RUECKERTSCRIPTS_CREDENTIALS_PSW"
       }
     }
     

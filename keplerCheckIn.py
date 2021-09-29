@@ -17,8 +17,8 @@ import time
 
 login = sys.argv[1]
 password = sys.argv[2]
-# gmail_address = sys.argv[3]
-# gmail_pass = sys.argv[4]
+gmail_address = sys.argv[3]
+gmail_pass = sys.argv[4]
 
 confirmationTimeStamp = ""
 confirmationErrorMessage = "Whoops, the confirmation did not work correctly."
@@ -81,10 +81,10 @@ acknowledge = web.find_element(
     By.XPATH, '//*[@id="ack-statement340"]').click()
 log.append("Clicked the Acknowledge box")
 
-def submitAttestation():
-    submitButton = web.find_element(
-        By.XPATH, '//*[@id="content"]/div/app-daily-screening1/div/div/div/div/div/div/div[3]/div[2]/div[3]/button').click()
-    log.append("Clicked the FINAL Submit button")
+# def submitAttestation():
+#     submitButton = web.find_element(
+#         By.XPATH, '//*[@id="content"]/div/app-daily-screening1/div/div/div/div/div/div/div[3]/div[2]/div[3]/button').click()
+#     log.append("Clicked the FINAL Submit button")
 
 # submitAttestation()
 
@@ -135,5 +135,5 @@ def email_alert(subject, body, to, cc):
     server.quit()
 
 
-# email_alert(keplerSubject, bodyLog,
-            # "phlacin@gmail.com", "")
+email_alert(keplerSubject, bodyLog,
+            "phlacin@gmail.com", "")
