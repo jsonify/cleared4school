@@ -31,8 +31,8 @@ keplerSubject = ""
 # Setup Selenium and open browser
 
 options = webdriver.ChromeOptions()
-# options.add_argument('--headless')
-# options.add_argument('--disable-gpu')
+options.add_argument('--headless')
+options.add_argument('--disable-gpu')
 chromedriverPath = "/usr/local/bin/chromedriver"
 web = webdriver.Chrome(
     chromedriverPath, options=options)
