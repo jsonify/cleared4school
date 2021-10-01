@@ -91,8 +91,6 @@ time.sleep(3)
 confirmationsMessage = web.find_element_by_xpath(
     '//*[@id = "content"]/div/app-daily-screening1/div/div/div/div/div/div/div[2]/div[1]/div[1]/div/p[1]').text
 
-print(bodyLog)
-
 if (confirmationsMessage) == "Based on your responses, you are Cleared4School.":
     confirmationTimeStamp = web.find_element_by_xpath(
         '//*[@id="content"]/div/app-daily-screening1/div/div/div/div/div/div/div[2]/div[1]/p[2]').text
@@ -106,9 +104,8 @@ else:
     keplerSubject = "Check-In Status: NOT Confirmed"
     log.append(keplerMessage)
 
-# web.close()
-print("Closed the browser")
 log.append("Closed the browser")
+print(bodyLog)
 
 # Convert log list to string
 

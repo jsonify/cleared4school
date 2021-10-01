@@ -6,7 +6,7 @@ pipeline {
     //timeout(time: 20, unit: 'MINUTES') // Set a timeout on the total execution time of the job
   }
   triggers {
-        cron('28 0 * * 1-5')
+        cron('35 0 * * 1-5')
   }
 
   environment {
