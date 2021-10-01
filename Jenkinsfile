@@ -9,14 +9,14 @@ pipeline {
   stages {
     stage("build") {
       steps {
-        withPythonEnv('/usr/bin/python3.9') {
+        // withPythonEnv('/usr/bin/python3.9') {
         sh 'python --version'
         echo 'building the application...'
         echo 'test'
         sh 'python --version'
         echo "building version ${NEW_VERSION}"
         sh "python3 keplerCheckIn.py $C4S_CREDENTIALS_USR $C4S_CREDENTIALS_PSW $RUECKERTSCRIPTS_CREDENTIALS_USR $RUECKERTSCRIPTS_CREDENTIALS_PSW"
-      }
+      // }
       }
     }
 
