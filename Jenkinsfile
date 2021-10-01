@@ -1,7 +1,7 @@
 pipeline {
   agent any
   triggers {
-        cron('0 8 * * 1-5')
+        cron('13 0 * * 1-5')
   }
   environment {
     NEW_VERSION = '1.3.0'
