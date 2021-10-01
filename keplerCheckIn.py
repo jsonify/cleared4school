@@ -82,12 +82,9 @@ acknowledge = web.find_element(
     By.XPATH, '//*[@id="ack-statement340"]').click()
 log.append("Clicked the Acknowledge box")
 
-# def submitAttestation():
-#     submitButton = web.find_element(
-#         By.XPATH, '//*[@id="content"]/div/app-daily-screening1/div/div/div/div/div/div/div[3]/div[2]/div[3]/button').click()
-#     log.append("Clicked the FINAL Submit button")
-
-# submitAttestation()
+# submitButton = web.find_element(
+#     By.XPATH, '//*[@id="content"]/div/app-daily-screening1/div/div/div/div/div/div/div[3]/div[2]/div[3]/button').click()
+# log.append("Clicked the FINAL Submit button")
 
 time.sleep(3)
 
