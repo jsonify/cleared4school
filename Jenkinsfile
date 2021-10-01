@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage("build") {
       steps {
-        withPythonEnv('python3') {
+        withPythonEnv('/usr/bin/python3.9') {
         sh 'python --version'
         echo 'building the application...'
         echo 'test'
