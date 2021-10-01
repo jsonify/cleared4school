@@ -82,9 +82,9 @@ acknowledge = web.find_element(
     By.XPATH, '//*[@id="ack-statement340"]').click()
 log.append("Clicked the Acknowledge box")
 
-# submitButton = web.find_element(
-#     By.XPATH, '//*[@id="content"]/div/app-daily-screening1/div/div/div/div/div/div/div[3]/div[2]/div[3]/button').click()
-# log.append("Clicked the FINAL Submit button")
+submitButton = web.find_element(
+    By.XPATH, '//*[@id="content"]/div/app-daily-screening1/div/div/div/div/div/div/div[3]/div[2]/div[3]/button').click()
+log.append("Clicked the FINAL Submit button")
 
 time.sleep(3)
 
@@ -133,4 +133,4 @@ def email_alert(subject, body, to, cc):
 
 
 email_alert(keplerSubject, bodyLog,
-            "phlacin@gmail.com", "")
+            "phlacin@gmail.com", "aliserueckert@gmail.com")
