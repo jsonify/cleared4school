@@ -10,7 +10,7 @@ pipeline {
     stage("build") {
       steps {
         withPythonEnv('/usr/bin/python3') {
-        sh 'pip install selenium'
+        sh 'pip install -r requirements.txt'
         sh 'python --version'
         echo 'building the application...'
         echo 'test'
