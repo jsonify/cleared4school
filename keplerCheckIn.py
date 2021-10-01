@@ -43,7 +43,7 @@ time.sleep(2)
 
 # Fill out the attestation application
 email_textbox = web.find_element(
-    By.XPATH, '//*[@id="content"]/div/app-login/div[1]/div/div/div/div/form/div[1]/div/p/input')
+    By.XPATH, '//*[@id = "content"]/div/app-login/div[1]/div/div/div/div/form/div[1]/div/p/input')
 email_textbox.send_keys(login)
 print("Entered email")
 log.append("Entered email")
