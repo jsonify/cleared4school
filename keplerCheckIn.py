@@ -16,10 +16,6 @@ password = os.environ.get("C4S_PASS")
 gmail_address = os.environ.get("GMAIL_EMAIL")
 gmail_pass = os.environ.get("GMAIL_PASS")
 
-# login = sys.argv[1]
-# password = sys.argv[2]
-# gmail_address = sys.argv[3]
-# gmail_pass = sys.argv[4]
 
 confirmationTimeStamp = ""
 confirmationErrorMessage = "Whoops, the confirmation did not work correctly."
