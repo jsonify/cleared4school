@@ -105,7 +105,7 @@ else:
     log.append(keplerMessage)
 
 log.append("Closed the browser")
-print(bodyLog)
+# print(bodyLog)
 
 # Convert log list to string
 
