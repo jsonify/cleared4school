@@ -2,7 +2,8 @@ pipeline {
   agent any
   triggers {
         when { branch "main" }
-        cron('41 11 * * 1-5')
+        cron('44 11 * * 1-5')
+  }
   environment {
     NEW_VERSION = '1.3.0'
     C4S_CREDENTIALS = credentials('c4s-credentials')
