@@ -28,4 +28,13 @@ pipeline {
       }
     }
   }
+  post {
+        always {
+          step([$class: 'Mailer',
+            notifyEveryUnstableBuild: true,
+            recipients: "phlacin@gmail.com",
+            sendToIndividuals: true])
+        }
+      }
+    }
 }
