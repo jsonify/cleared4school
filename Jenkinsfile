@@ -30,7 +30,7 @@ pipeline {
   }
 
   post {
-        always {
+        failure {
           step([$class: 'Mailer',
             notifyEveryUnstableBuild: true,
             recipients: "phlacin@gmail.com",
