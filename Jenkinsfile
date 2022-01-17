@@ -28,13 +28,13 @@ pipeline {
       }
     }
   }
+
   post {
         always {
           step([$class: 'Mailer',
             notifyEveryUnstableBuild: true,
-            recipients: "phlacin@gmail.com",
+            recipients: "example@example.com",
             sendToIndividuals: true])
         }
       }
-    }
 }
